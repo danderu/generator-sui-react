@@ -1,4 +1,4 @@
-# generator-sui-react
+# sui-react-generator
 
 [![NPM Version][npm-image]][npm-url]
 
