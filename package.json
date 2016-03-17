@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:SUI-Components/generator-sui-react.git"
+    "url": "git@github.com:danderu/generator-sui-react.git"
   },
   "keywords": [
     "yeoman-generator",
