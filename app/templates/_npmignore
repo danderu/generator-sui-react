@@ -11,4 +11,3 @@ scripts
 .scss-lint.yml
 npm-debug.log
 webpack.config.js
-webpack.doc.config.js

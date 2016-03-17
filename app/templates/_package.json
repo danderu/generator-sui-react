@@ -39,7 +39,7 @@
     "react": "0.14"
   },
   "devDependencies": {
-    "@schibstedspain/frontend-pre-commit-rules": "6.6.1",
+    "@schibstedspain/frontend-pre-commit-rules": "6.6.2",
     "@schibstedspain/theme-basic": "3.0.1",
     "babel": "6.5.2",
     "babel-cli": "6.6.5",
