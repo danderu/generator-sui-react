@@ -124,10 +124,6 @@ module.exports = generators.Base.extend({
       this.destinationPath('.npmignore'));
 
     this.fs.copyTpl(
-      this.templatePath('_eslintignore'),
-      this.destinationPath('.eslintignore'));
-
-    this.fs.copyTpl(
       this.templatePath('_README.md'),
       this.destinationPath('README.md'),
       {
