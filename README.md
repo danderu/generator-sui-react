@@ -43,12 +43,12 @@ To make sure it's installed correctly, type `yo` in your terminal. A list of opt
 ~ ❯ yo
 ? 'Allo [your-username]! What would you like to do? (Use arrow keys)
   Run a generator
-❯ @schibstedspain/sui React 
+❯ @schibstedspain/sui React
   ──────────────
-  Update your generators 
-  Install a generator 
-  Find some help 
-  Get me out of here! 
+  Update your generators
+  Install a generator
+  Find some help
+  Get me out of here!
 ```
 
 ## Create your first React.JS component
@@ -130,5 +130,4 @@ dist
 * `doc:publish`: publishes your documentation in your repository's Github page
 * `phoenix`: cleans your `node_modules` folder and launches `npm install` to restore all your dependencies
 
-[npm-image]: https://img.shields.io/npm/v/@schibstedspain/generator-sui-react.svg?style=flat
-[npm-url]: https://npmjs.com/@schibstedspain/generator-sui-react
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/sui-react-generator)
