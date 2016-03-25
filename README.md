@@ -1,7 +1,5 @@
 # sui-react-generator
 
-[![NPM Version][npm-image]][npm-url]
-
 A yeoman generator for Schibsted User Interface (**sui**) ReactJS components. By using this generator, you can create components to work as a part of a complex application (atoms or mollecules) or stand-alone components, ready for production.. For more information about **atomic design**, read the following blog post: http://bradfrost.com/blog/post/atomic-web-design/.
 
 ## Features
@@ -129,5 +127,3 @@ dist
 * `doc:copy`: copies the files generated in the `dist` folder into your `docs` folder
 * `doc:publish`: publishes your documentation in your repository's Github page
 * `phoenix`: cleans your `node_modules` folder and launches `npm install` to restore all your dependencies
-
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/sui-react-generator)

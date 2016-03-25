@@ -1,7 +1,7 @@
 {
   "name": "<%= component_name %>",
   "version": "0.0.0",
-  "main": "dist/",
+  "main": "lib/",
   "scripts": {
     "clean:lib": "rimraf ./lib/*",
     "clean:dist": "rimraf ./dist/*",

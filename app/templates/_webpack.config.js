@@ -28,9 +28,6 @@ var base = {
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
        }
-    }),
-    new ExtractTextPlugin('dist/index.css', {
-      allChunks: true
     })
   ]
 }
@@ -54,7 +51,10 @@ if(TARGET === 'start:server' || !TARGET) {
     },
     devtool: 'source-map',
     plugins: [
-      new webpack.HotModuleReplacementPlugin()
+      new webpack.HotModuleReplacementPlugin(),
+      new ExtractTextPlugin('dist/index.css', {
+        allChunks: true
+      })
     ]
   });
 }
@@ -62,16 +62,23 @@ if(TARGET === 'start:server' || !TARGET) {
 
 if(TARGET === 'dist') {
   module.exports = merge(base, {
-    entry: path.resolve(__dirname, 'docs/index.jsx'),
+     entry: {
+      app: path.resolve(__dirname, 'docs/index.jsx'),
+      vendors: ['react', 'react-dom', 'babel-polyfill']
+    },
     output: {
-      filename: 'dist/index.js'
+      filename: 'dist/index.[hash].js'
     },
     plugins: [
       new webpack.optimize.UglifyJsPlugin({
         compress: {
           warnings: false
         }
-      })
+      }),
+      new ExtractTextPlugin('dist/index.[contenthash].css', {
+        allChunks: true
+      }),
+      new webpack.optimize.CommonsChunkPlugin('vendors', 'dist/vendors.[hash].js')
     ]
   });
 }
